@@ -125,40 +125,90 @@ namespace dia2
 
             //JUICIO DE ALTURA
 
-            Console.WriteLine("Introduzca su altura en centímetros");
-            int _alt = int.Parse(Console.ReadLine());
-            if (_alt <= 0)
-            {
-                Console.WriteLine("Que te acuestes. Di la verdad");
-            }
-            else
-            {
+            //Console.WriteLine("Introduzca su altura en centímetros");
+            //int _alt = int.Parse(Console.ReadLine());
+            //if (_alt <= 0)
+            //{
+            //    Console.WriteLine("Que te acuestes. Di la verdad");
+            //}
+            //else
+            //{
 
-                if (_alt >= 190)
-                {
-                    Console.WriteLine("Hostia cabrón, que alto eres.");
-                }
-                else if (_alt >= 175 && _alt < 190)
-                {
-                    Console.WriteLine("ah si? Bueno bueno...");
-                }
-                else if (_alt < 175 && _alt >= 145)
-                {
-                    Console.WriteLine("Eres un taponcete");
-                }
-                else if (_alt < 145 && _alt >= 0)
-                {
-                    Console.WriteLine("No creo.");
-                }
-                else
-                {
-                    Console.WriteLine("No me tangues.");
-                }
+            //    if (_alt >= 190)
+            //    {
+            //        Console.WriteLine("Hostia cabrón, que alto eres.");
+            //    }
+            //    else if (_alt >= 175 && _alt < 190)
+            //    {
+            //        Console.WriteLine("ah si? Bueno bueno...");
+            //    }
+            //    else if (_alt < 175 && _alt >= 145)
+            //    {
+            //        Console.WriteLine("Eres un taponcete");
+            //    }
+            //    else if (_alt < 145 && _alt >= 0)
+            //    {
+            //        Console.WriteLine("No creo.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("No me tangues.");
+            //    }
+
+            //WHILE
+            //int repetitions = int.Parse(Console.ReadLine());
+            //int counter = 0;
+
+            //while (counter < repetitions)
+            //{
+            //    Console.WriteLine(counter);
+            //    counter++;
+            //}
+
+
+            //    }
+
+            //TABLA MULTIPLICAR
+
+            //    //WHILE
+            //    Console.WriteLine("Introduce el numeroa multiplicar");
+            //int _table = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Introduce número de veces a repetir");
+            //int _limit = int.Parse(Console.ReadLine());
+            //int x = 0; 
+            //while (x!=_limit)
+            //{
+            //    Console.WriteLine(_table * x);
+            //    x++;
+            //}
+
+            //DO WHILE
+
+            //int repetitions = int.Parse(Console.ReadLine());
+            //int counter = 0;
+            //do
+            //{
+            //    Console.WriteLine(counter);
+            //    counter++;
+            //}
+            //while (counter < repetitions);
+
+            //FOR
+
+            Console.WriteLine("Escribe el numero a multiplicar");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Escribe el nº veces a repetir");
+            int repetitions = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= repetitions; i +=1)
+            {
+                Console.WriteLine(x + "x" + i + " = " + (x * i));
             }
+
+        }
 
 
 
         }
 
     }
-}
+
