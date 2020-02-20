@@ -347,22 +347,47 @@ namespace dia2
              //}
              //while ();
             }
-            Console.WriteLine("Cuantos numeros desea introducir?: ");
-            int _repetitions = int.Parse(Console.ReadLine());
-            int totalSum = 0;
-            
-            for (int counter = 0; counter < _repetitions; counter++)
+            //Console.WriteLine("Cuantos numeros desea introducir?: ");
+            //int _repetitions = int.Parse(Console.ReadLine());
+            //int totalSum = 0;
+
+            //for (int counter = 0; counter < _repetitions; counter++)
+            //{
+            //    Console.WriteLine("Introduce valor: ");
+            //    int number = int.Parse(Console.ReadLine());
+            //    totalSum = totalSum + number;
+
+            //}
+            //Console.WriteLine("El resultado es: " + totalSum);
+
+            //Console.WriteLine("¿Cuantos numeros desea sumar?: ");
+            //int numberCount = int.Parse(Console.ReadLine());
+
+            //int[] numeros = new int [numberCount];
+
+            //for (int i = 0; i < numberCount; i++)
+            //{
+            //    Console.WriteLine(numeros);
+            //}
+
+            Console.WriteLine("¿Cuantos numeros desea sumar?: ");
+            int numberCount = int.Parse(Console.ReadLine());
+
+            int[] numeros = new int[numberCount];
+
+            for (int i = 0; i < numeros.Length; i++)
             {
-                Console.WriteLine("Introduce valor: ");
-                int number = int.Parse(Console.ReadLine());
-                totalSum = totalSum + number;
-
+                Console.WriteLine("Numero" + (i+1) + " : ");
+                numeros[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("El resultado es: " + totalSum);
-            
 
-           
+            int total = 0;
 
+            for(int i = 0; i<numeros.Length; i++)
+            {
+                total += numeros[i];
+            }
+            Console.WriteLine("Suma total: " + total);
 
 
 
